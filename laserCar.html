@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>激光扫描车数据</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #modelContainer {
+            width: 100vw;
+            height: 100vh;
+            background-color: #333333;
+        }
+        .loading-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .loading-bar {
+            width: 200px;
+            height: 10px;
+            background-color: #444;
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+        .loading-progress {
+            width: 0%;
+            height: 100%;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="modelContainer"></div>
+    <script src="js/Libs/three.min.js"></script>
+    <script src="js/Libs/OrbitControls.js"></script>
+    <script src="js/Libs/PLYLoader.js"></script>
+    <script src="laserCar.js"></script>
+</body>
+</html> 
